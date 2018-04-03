@@ -15,3 +15,5 @@ Improvements being looked into so far are:
 - Improved cover art storage
 - Improved overall design
 - Improved fluidity on mobile
+
+This will be developed mostly from scratch - meaning it will take time for it to get on par with the existing website.
