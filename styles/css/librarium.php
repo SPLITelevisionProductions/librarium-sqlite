@@ -147,7 +147,9 @@ header {
   z-index: 1;
   width: 100%;
   height: <?=$headH?>;
-  background: maroon;
+  background:
+    linear-gradient(to bottom, rgba(155,13,47,0.95) 0%, rgba(155,13,47,0.95) 100%),
+    url(../images/paper.png);
   text-align: center;
 }
 
@@ -167,6 +169,8 @@ header div.shelfselectbtn {
   font-weight: bold;
   font-size: 1.1em;
   padding: 0px 5px 0px 10px;
+  box-sizing: border-box;
+  max-width: calc(100% - (<?=$headH?> * 3));
   margin-left: <?=$headH?>;
 }
 
@@ -174,6 +178,7 @@ header div.shelfselectbtn span {
   display: inline-block;
   vertical-align: top;
   padding-left: 10px;
+  height: <?=$headH?>;
 }
 
 header div.shelfselectbtn .material-icons {
@@ -254,7 +259,7 @@ ul.shelflist li.current {
 }
 
 .hidden {
-  /*display: none;*/
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -275,5 +280,19 @@ ul.shelflist li.current {
   header {
     width: calc(100% - 320px); 
     left: 320px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  header div.shelfselectbtn {
+    margin: 0;
+    width: calc(100% - (<?=$headH?> * 3));
+  }
+
+  header div.shelfselectbtn span {
+    max-width: calc(100% - 100px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
