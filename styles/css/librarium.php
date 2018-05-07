@@ -525,6 +525,19 @@ ul.shelflist li.separator {
   -webkit-overflow-scrolling: touch;
 }
 
+#CoverCrop .diag-content {
+  padding: 0px;
+  overflow: hidden;
+}
+
+#BKDCropImageWrap {
+	overflow: hidden;
+}
+
+#BKDCropImageWrap img {
+  max-width: 100%;
+}
+
 .dialogue.tabbed .diag-content {
   height: calc(100% - (<?=$headH?> + 48px));
   margin-top: calc(<?=$headH?> + 48px);
