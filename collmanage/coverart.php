@@ -26,7 +26,7 @@
 		// Tell AJAX the request was unsuccessful
 		header('HTTP/1.1 400 Bad Request');
 		// Display the page
-		include('../admin/errors/400.html');
+		include('../admin/errors/400.php');
 		// Stop processing any code
         exit;
     }
@@ -69,7 +69,7 @@
 			// Tell AJAX the request was unsuccessful
 			header('HTTP/1.1 400 Bad Request');
 			// Display the page
-			include('../admin/errors/400.html');
+			include('../admin/errors/400.php');
 			// Stop processing any code
             exit;
         }
@@ -113,7 +113,7 @@
 			// Tell AJAX the request was unsuccessful
 			header('HTTP/1.1 400 Bad Request');
 			// Display the page
-			include('../admin/errors/400.html');
+			include('../admin/errors/400.php');
 			// Stop processing any code
             exit;
       	}
@@ -125,7 +125,7 @@
 		// Tell AJAX the request was unsuccessful
 		header('HTTP/1.1 400 Bad Request');
 		// Display the page
-		include('../admin/errors/400.html');
+		include('../admin/errors/400.php');
 		// Stop processing any code
         exit;
     }

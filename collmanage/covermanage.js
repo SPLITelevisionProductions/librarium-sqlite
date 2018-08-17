@@ -98,7 +98,7 @@ function startCropper(input) {
                             // Start AJAX
                             $.ajax({
                                 // The URL to post the data to
-                                url: '/collmanage/covermanage.php?id=testdb&upload=' + id,
+                                url: '/collmanage/coverart.php?id=testdb&upload=' + id,
                                 // The data to send (our FormData object as "formData")
                                 data: formData,
                                 // Don't cache the data
