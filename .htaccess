@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteRule ^collection/([^/]+)/?$ collection_pub.php?username=$1 [L]
+RewriteRule ^collection$ collection.php [L]
+RewriteRule ^login$ / [L]
+RewriteRule ^register$ /?register [L]
+RewriteRule ^logout$ /?logout [L]
+
+php_value upload_max_filesize 10M
