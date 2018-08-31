@@ -4,9 +4,11 @@ A web-application for managing your Book, DVD, CD, Game and/or Magazine collecti
 
 This is a preview version of Librarium, being developed to use SQLite to store the user's collection and cover art, with a separate database for each user, whilst still using MySQL to handle the management of the users themselves.
 
-This preview will be located at https://librarium.lga.nz/
+This preview is located at https://librarium.lga.nz/
 
-Eventually, this will replace the main website once it is feature-par. In the meantime, only bug fixes will be made to the main website.
+This version is nearly feature-par with the current version, and will replace it soon. In the meantime, only bug fixes will be made to the main website.
+
+Most server scripts are now returning JSON, which means development on the native mobile version can begin.
 
 Improvements being looked into so far are:
 
@@ -15,22 +17,24 @@ Improvements being looked into so far are:
 - Improved cover art storage
 - Improved overall design
 - Improved fluidity on mobile
+- Import from other library applications
 
 This will be developed mostly from scratch - meaning it will take time for it to get on par with the existing website.
 
 ## Browser Compatibility
 
-Hopefully, this version of Librarium. will be compatible with all recent versions of the major browsers.
-Development is currently focusing on Google Chrome 60+, and Safari 11+ on both Mobile and Desktop. As such, the below table may not show the most up-to-date results for all browsers.
+As we are using CSS grids, you need a relatively recent browser, but this will change once a solution for older browsers has been implemented. Below are the requirements for running this version, currently:
 
 ### Desktop Browsers
 
 | Chrome | Firefox | Safari | Edge | IE |
-| --- | --- | --- | --- | --- |
-| 66: Full | ??: Untested | 11: Full | 42: Mostly | 11: Partial |
+| --- | --- | --- | --- | --- | --- |
+| 57 | 52 | 10.1 | 16 | N/A |
 
 ### Mobile Browsers
 
-| Chrome | Firefox | Safari | Edge |
-| --- | --- | --- | --- |
-| ??: Untested | ??: Untested | 11: Mostly | ??: Untested |
+| Chrome | Firefox | Safari | Edge | Samsung |
+| --- | --- | --- | --- | --- |
+| 57 | 52 | 10.3 | 16 | 6.0 |
+
+Note that Librarium. has only really been tested fully on Desktop Chrome 66+ and iOS Safari 11+. More will be tested once the UI has settled
