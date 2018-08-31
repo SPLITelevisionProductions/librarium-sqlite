@@ -28,7 +28,7 @@ As we are using CSS grids, you need a relatively recent browser, but this will c
 ### Desktop Browsers
 
 | Chrome | Firefox | Safari | Edge | IE |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | 57 | 52 | 10.1 | 16 | N/A |
 
 ### Mobile Browsers
